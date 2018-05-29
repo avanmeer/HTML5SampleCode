@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FCDEAA11-E163-4312-864F-E9064F56A65C}"
+	ProjectSection(SolutionItems) = preProject
+		Main.html = Main.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{4559E147-E499-4525-9971-3297BDB61196}"
+	ProjectSection(SolutionItems) = preProject
+		css\bootstrap-fileupload.css = css\bootstrap-fileupload.css
+		css\bootstrap-select.css = css\bootstrap-select.css
+		css\bootstrap-switch.css = css\bootstrap-switch.css
+		css\bootstrap.css = css\bootstrap.css
+		css\custom.css = css\custom.css
+		css\flat-ui-fonts.css = css\flat-ui-fonts.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{CB18FE87-B718-4079-9110-FB2B1BE1E35A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSSNWebServiceJS", "CSSNWebServiceJS", "{3261DE88-DF9D-48F7-8A6D-3337FDF4A5BA}"
+	ProjectSection(SolutionItems) = preProject
+		js\CSSNWebServiceJS\credentials.js = js\CSSNWebServiceJS\credentials.js
+		js\CSSNWebServiceJS\Main.js = js\CSSNWebServiceJS\Main.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4559E147-E499-4525-9971-3297BDB61196} = {CB18FE87-B718-4079-9110-FB2B1BE1E35A}
+		{3261DE88-DF9D-48F7-8A6D-3337FDF4A5BA} = {CB18FE87-B718-4079-9110-FB2B1BE1E35A}
+	EndGlobalSection
+EndGlobal

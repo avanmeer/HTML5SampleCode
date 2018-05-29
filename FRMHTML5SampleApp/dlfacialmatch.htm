@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Card Scanning Solutions Inc.">
+    <title>Facial Match</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <!-- for the dropdown list of regions -->
+    <link href="css/bootstrap-fileupload.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <link href="css/bootstrap.icon-large.css" rel="stylesheet">
+    <!-- for the Crop image on and off slider -->
+    <link href="css/flat-ui-fonts.css" rel="stylesheet">
+    <!-- for the fonts of the web page -->
+    <link href="css/flat-ui-fonts.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <form name="formSubmit" action="#">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">            
+                <a class="navbar-brand" href="http://acuantcorp.com/" target="_blank" style="color: #0773BA;">
+                    <img src="Images/acuant-logo.png" />
+                </a>
+            </div>
+            <div class="visible-lg">
+                <br />
+                <br />
+                <br />
+            </div>        
+        </nav>
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <div class="starter-template">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12">
+                        <div id="container-camera">
+                            <div class="row">
+                            
+
+                                <div class="col-xs-12 col-sm-6 col-lg-6">
+                                    <div id="fileupload-container-face1" class="fileupload fileupload-new" data-provides="fileupload">
+                                        <div class="fileupload-new thumbnail">
+                                            <img class="img-responsive" id="placehold-image-face1" src="Images/TapSelfie.gif" />
+                                        </div>
+                                        <div id="image-thumbnail-face1" class="fileupload-preview fileupload-exists thumbnail">
+                                        </div>
+                                        <div>
+                                            <span class="btn btn-file btn-link btn-sm">
+                                                <input id="input-image-face1" type="file" capture="camera" name="faceImage1" />
+                                            </span><a id="remove-button-face1" href="#" class="btn btn-sm fileupload-exists" data-dismiss="fileupload"
+                                                      style="display: none">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-lg-6">
+                                    <div id="fileupload-container-selfie" class="fileupload fileupload-new" data-provides="fileupload">
+                                        <div class="fileupload-new thumbnail">
+                                            <img class="img-responsive" id="placehold-image-selfie" src="Images/TapSelfie.gif" />
+                                        </div>
+                                        <div id="image-thumbnail-selfie" class="fileupload-preview fileupload-exists thumbnail">
+                                        </div>
+                                        <div>
+                                            <span class="btn btn-file btn-link btn-sm">
+                                                <input id="input-image-selfie" type="file" capture="camera" name="selfieImage" />
+                                            </span><a id="remove-button-selfie" href="#" class="btn btn-sm fileupload-exists" data-dismiss="fileupload"
+                                                      style="display: none">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div id="div-controls" class="col-xs-12 col-sm-12 col-lg-12">
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                            <button id="btn-process-facial-match" type="button" class="btn btn-lg btn-primary" style="width: 150px;
+                            height: 50px;">
+                                Process 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading" style="text-align: center;">
+            </div>
+            <div id="errorDiv" style="text-align: center; color: red;">
+            </div>
+            <div class="row">
+
+                <div id="facialMatchResponse" class="col-xs-12 col-sm-12" style="display: none;">
+                    <div class="panel panel-info">
+                        <div class="panel-heading text-center">
+                            <strong>Facial Match Response</strong>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-lg-12">
+                                    <div id="facial-match-response" class="form-horizontal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript ==================================================
+        -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/MiscJS/base.js"></script>
+        <script>
+            goog.require('goog.crypt.base64');
+        </script>
+        <script src="js/MiscJS/jquery-2.0.3.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function () { $('.selectpicker').selectpicker({}); });
+        </script>
+        <script src="js/MiscJS/bootstrap.js"></script>
+        <script src="js/MiscJS/bootstrap-fileupload.js"></script>
+        <script src="js/MiscJS/jquery.base64.js"></script>
+        <script src="js/MiscJS/bootstrap-switch.js"></script>
+        <script src="js/MiscJS/bootstrap-select.js"></script>
+        <script src="js/MiscJS/binaryajax.js"></script>
+        <script src="js/MiscJS/exif.js"></script>
+        <script src="js/MiscJS/canvasResize.js"></script>
+        <script src="js/AcuantWebServiceJS/licensekey.js"></script>
+        <script src="js/AcuantWebServiceJS/dlfacialmatch.js"></script>
+    </form>
+</body>
+</html>

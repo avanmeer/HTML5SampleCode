@@ -1,0 +1,186 @@
+body{
+    padding-top: 50px;
+    background-color: #C4C9DC;
+}
+
+.starter-template{
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: -12px;
+}
+
+
+.col-lg-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.control-label {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img-responsive {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width:768px), (min-width:961px), (min-width:1025px), (min-width:1281px) { 
+    
+    #image-thumbnail {
+        max-width: 503px; 
+        max-height: 318px; 
+        line-height: 20px;
+    }
+    
+    #front-image {
+        max-width: 503px;
+    }
+    
+    #back-image {
+        max-width: 503px;
+    }
+        
+    #screenshot-canvas{
+        width: 515px; 
+        height: 386px;       
+        line-height: 20px; 
+    }
+}
+
+.icon-webcam {
+    background-image: url("../images/webcam.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;    
+}
+
+.icon-hard-drive {
+    background-image: url("../images/hard-drive.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;    
+}
+
+
+.icon-fullscreen {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;
+}
+
+.icon-info {
+    background-image: url("../images/info.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 18px;
+    line-height: 20px;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.icon-camera {
+    background-image: url("../images/camera.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 34px;
+}
+
+.icon-medic-front {
+    background-image: url("../images/medic-icon-small.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;
+}
+
+.icon-medic-front-v2 {
+    background-image: url("../images/medic-icon-smallv2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;
+}
+
+
+.icon-medic-back {
+    background-image: url("../images/medic-icon-back-small.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: text-bottom;
+    width: 26px;
+}
+
+.switch-large {
+  min-width: 50px;
+}
+
+.btn-width-md{
+    width:300px;
+}
+
+.col-centered{  
+    float: none;
+    margin: 0 auto;
+}
+
+.container-video {
+  width: 640px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-xs-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+ .col-xs-offset-3 {
+    margin-left: 25%;
+  }
+  
+  .col-xs-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-xs-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-xs-offset-6 {
+    margin-left: 50%;
+  }
+  
+#txt-access-key {
+    width: 125px; 
+}
+
+.nav > li > a {
+    top: 59px;
+}
+
+.navbar-fixed-top {
+    height: 109px;
+}
